@@ -1,0 +1,68 @@
+/* PublicationItem — HCI@KAIST style (clean text list, no card borders) */
+
+.pub-item {
+  padding: var(--space-5) 0;
+  border-bottom: 1px solid var(--color-border-light);
+  transition: background var(--transition-fast);
+}
+
+.pub-item:last-child {
+  border-bottom: none;
+}
+
+.pub-item__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.pub-item__title {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-tight);
+  margin-bottom: var(--space-2);
+  color: var(--color-text);
+}
+
+.pub-item__authors {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-1);
+}
+
+.pub-item__venue {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  font-style: italic;
+  margin-bottom: var(--space-2);
+}
+
+.pub-item__abstract {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-3);
+}
+
+.pub-item__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.pub-item__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.pub-item__links {
+  display: flex;
+  gap: var(--space-2);
+  margin-left: auto;
+}
+
+/* Hide year badge (HCI@KAIST uses tab filtering, not per-item badges) */
+.pub-item__year-badge {
+  display: none;
+}
