@@ -16,65 +16,38 @@
 }
 
 .news-card--featured .news-card__desc {
+  line-clamp: 4;
   -webkit-line-clamp: 4;
 }
 
 .news-card {
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
+  flex-direction: column;
+  padding: var(--space-6) 0;
+  border-bottom: 1px solid var(--color-border-light);
 }
 
-/* 카드 그리드에서 번갈아 y축 오프셋 적용 */
-.card-grid--3 .news-card:nth-child(2n) {
-  transform: translateY(18px);
-}
-.card-grid--3 .news-card:nth-child(2n+1) {
-  transform: translateY(-8px);
-}
-
-.news-card:hover {
-  border-color: var(--color-border);
-}
-
-.news-card__img-wrap {
-  width: 560px;
-  flex-shrink: 0;
-  aspect-ratio: 16/9;
-  background: var(--color-bg-subtle);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.news-card__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background: linear-gradient(135deg, #e0e7ff 0%, #dbeafe 100%);
+.news-card:last-child {
+  border-bottom: none;
 }
 
 .news-card__body {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: var(--space-6);
-  gap: var(--space-2);
+  gap: var(--space-3);
+}
+
+.news-card__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-1);
 }
 
 @media (max-width: 900px) {
   .news-card,
   .news-card--featured {
-    flex-direction: column;
-    min-height: unset;
-  }
-  .news-card__img-wrap,
-  .news-card--featured .news-card__img-wrap {
-    width: 100%;
-    max-width: 100%;
-    aspect-ratio: 16/9;
+    padding: var(--space-4) 0;
   }
 }
 
@@ -84,18 +57,19 @@
 }
 
 .news-card__title {
-  font-size: var(--text-3xl);
-  font-weight: var(--font-bold);
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
   color: var(--color-text);
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-2);
   line-height: var(--leading-tight);
 }
 
 .news-card__desc {
-  font-size: var(--text-lg);
+  font-size: var(--text-base);
   color: var(--color-text-secondary);
   line-height: var(--leading-relaxed);
   display: -webkit-box;
+  line-clamp: 4;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;

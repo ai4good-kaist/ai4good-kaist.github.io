@@ -71,7 +71,7 @@ export const labs = [
     pi: 'Hyunwoo Kim',
     department: 'Graduate School of AI',
     link: 'https://coco-kaist.github.io/',
-    photo: '/img/hyunwookim_gsai.jpg',
+    photo: '/img/hyunwoo.jpg',
   },
   {
     id: 'jihee-kim-lab',
@@ -151,7 +151,7 @@ export const labs = [
     pi: 'Song Chong',
     department: 'Electrical Engineering, Graduate School of AI',
     link: 'https://sites.google.com/a/kaist.edu/song-chong',
-    photo: '/img/songchong_gsai.jpg',
+    photo: '/img/song_chong.jpg',
   },
   {
     id: 'ic-lab',

@@ -5,39 +5,20 @@
  */
 export const events = [
   {
-    id: 'evt-1',
-    title: 'Community Workshop',
-    date: '2026-04-18',
-    endDate: '2026-04-19',
-    location: 'KAIST',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    id: 'evt-kickoff',
+    title: 'Kick-off Workshop',
+    date: '2026-04-20T15:00:00',
+    endDate: '2026-04-20T18:00:00',
+    location: 'Daejeon Campus',
+    description: 
+`[Tentative Program]
+• Opening remarks
+• AI for sustainability (Haewon Jeon, Hyunwoo Kim)
+• AI for education (Soyeon Ahn, Juho Kim)
+• AI for mental health (Dooyoung Jung, Hwajung Hong)
+• Closing`,
     type: 'upcoming',
-    featured: false,
+    featured: true,
     link: null,
-  },
-  {
-    id: 'evt-2',
-    title: 'Research Seminar',
-    date: '2026-05-10',
-    endDate: null,
-    location: 'KAIST',
-    description:
-      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    type: 'upcoming',
-    featured: false,
-    link: null,
-  },
-  {
-    id: 'evt-3',
-    title: 'Guest Lecture',
-    date: '2026-05-25',
-    endDate: null,
-    location: 'KAIST',
-    description:
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    type: 'upcoming',
-    featured: false,
-    link: null,
-  },
+  }
 ];

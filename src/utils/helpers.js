@@ -28,9 +28,14 @@ export function formatDateRange(startStr, endStr) {
   const end = new Date(endStr);
 
   if (start.getMonth() === end.getMonth() && start.getFullYear() === end.getFullYear()) {
-    // Same month: "April 18–19, 2026"
     const month = start.toLocaleDateString('en-US', { month: 'long' });
-    return `${month} ${start.getDate()}–${end.getDate()}, ${start.getFullYear()}`;
+    if (start.getDate() === end.getDate()) {
+      // Same day: "April 20, 2026"
+      return `${month} ${start.getDate()}, ${start.getFullYear()}`;
+    } else {
+      // Same month, different days: "April 18–19, 2026"
+      return `${month} ${start.getDate()}–${end.getDate()}, ${start.getFullYear()}`;
+    }
   }
 
   return `${formatDate(startStr)} – ${formatDate(endStr)}`;

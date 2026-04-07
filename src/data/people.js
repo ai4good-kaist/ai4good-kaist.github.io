@@ -94,7 +94,7 @@ export const people = {
       name: 'Hyunwoo Kim',
       role: 'Computation & Cognition Lab',
       affiliation: 'Graduate School of AI',
-      photo: '/img/hyunwookim_gsai.jpg',
+      photo: '/img/hyunwoo.jpg',
       links: {
         website: 'https://coco-kaist.github.io/',
         email: 'hyunwookim.ai@gmail.com',
@@ -182,7 +182,7 @@ export const people = {
       name: 'Song Chong',
       role: "Song Chong's Lab",
       affiliation: 'Electrical Engineering, Graduate School of AI',
-      photo: '/img/songchong_gsai.jpg',
+      photo: '/img/song_chong.jpg',
       links: {
         website: 'https://sites.google.com/a/kaist.edu/song-chong',
         email: 'songchong@kaist.edu',
