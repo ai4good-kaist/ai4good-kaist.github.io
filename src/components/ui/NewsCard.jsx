@@ -8,15 +8,22 @@ export default function NewsCard({ news, featured = false }) {
       rel={news.link ? 'noopener noreferrer' : undefined}
       className={`news-card${featured ? ' news-card--featured' : ''}`}
     >
-
       <div className="news-card__body">
         <div className="news-card__meta">
-          {news.category && <span className="tag tag--active">{news.category}</span>}
+          {news.source && <span className="news-card__source">{news.source}</span>}
+          {news.source && <span className="news-card__divider">·</span>}
+          {news.category && !news.source && <span className="tag tag--active">{news.category}</span>}
           <span className="news-card__date">{news.date}</span>
         </div>
-        <h3 className="news-card__title">{news.title}</h3>
+        <h3 className="news-card__title" style={{ color: '#0047b3' }}>{news.title}</h3>
         <p className="news-card__desc">{news.content}</p>
       </div>
+
+      {news.image && (
+        <div className="news-card__img-wrap">
+          <img src={news.image.startsWith('http') ? news.image : `${import.meta.env.BASE_URL}${news.image.startsWith('/') ? news.image.slice(1) : news.image}`} alt="" className="news-card__img" />
+        </div>
+      )}
     </a>
   );
 }
