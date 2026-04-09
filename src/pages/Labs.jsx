@@ -44,7 +44,13 @@ export default function Labs() {
               <div key={lab.id} className="lab-card">
                 <div className="lab-card__photo">
                   {lab.photo ? (
-                    <img src={lab.photo.startsWith('http') ? lab.photo : `${import.meta.env.BASE_URL}${lab.photo.startsWith('/') ? lab.photo.slice(1) : lab.photo}`} alt={lab.pi} className="lab-card__img" loading="lazy" />
+                    <img 
+                      src={lab.photo.startsWith('http') ? lab.photo : `${import.meta.env.BASE_URL}${lab.photo.startsWith('/') ? lab.photo.slice(1) : lab.photo}`} 
+                      alt={lab.pi} 
+                      className="lab-card__img" 
+                      loading="lazy" 
+                      style={lab.photoStyle || {}} 
+                    />
                   ) : (
                     <span className="lab-card__initials">{getInitials(lab.pi)}</span>
                   )}

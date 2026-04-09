@@ -13,7 +13,13 @@ export default function PersonCard({ person }) {
     <div className="person-card">
       <div className="person-card__photo-wrapper">
         {photo ? (
-          <img src={photo.startsWith('http') ? photo : `${import.meta.env.BASE_URL}${photo.startsWith('/') ? photo.slice(1) : photo}`} alt={name} className="person-card__photo" loading="lazy" />
+          <img 
+            src={photo.startsWith('http') ? photo : `${import.meta.env.BASE_URL}${photo.startsWith('/') ? photo.slice(1) : photo}`} 
+            alt={name} 
+            className="person-card__photo" 
+            loading="lazy" 
+            style={person.photoStyle || {}}
+          />
         ) : (
           <div className="person-card__initials" aria-hidden="true">
             {getInitials(name)}

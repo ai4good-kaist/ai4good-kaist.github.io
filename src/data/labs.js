@@ -12,6 +12,7 @@ export const labs = [
     department: 'School of Computing',
     link: 'https://uilab.kr/',
     photo: '/img/aliceoh_soc.jpg',
+    photoStyle: { objectPosition: 'top' },
   },
   {
     id: 'oml-lab',
@@ -42,6 +43,7 @@ export const labs = [
     department: 'Graduate School of Green Growth and Sustainability',
     link: 'https://kaist-iam.github.io/group/about.html',
     photo: '/img/haewonmcjeon_gsggs.webp',
+    photoStyle: { objectPosition: 'top' },
   },
   {
     id: 'dxd-lab',
@@ -75,7 +77,7 @@ export const labs = [
   },
   {
     id: 'jihee-kim-lab',
-    name: 'Economic Progress and AI Research Group\n(econai@kaist)',
+    name: 'Economic Progress and AI Research Group',
     description: 'Research on business and technology management with data science.',
     topics: ['Data Science', 'Business Analytics'],
     pi: 'Jihee Kim',

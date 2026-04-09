@@ -19,6 +19,7 @@ export const people = {
       role: 'Users&Information Lab',
       affiliation: 'School of Computing',
       photo: '/img/aliceoh_soc.jpg',
+      photoStyle: { objectPosition: 'top' },
       links: {
         website: 'https://uilab.kr/',
         email: 'alice.oh@kaist.edu',
@@ -52,6 +53,7 @@ export const people = {
       role: 'KAIST IAM Group',
       affiliation: 'Graduate School of Green Growth and Sustainability',
       photo: '/img/haewonmcjeon_gsggs.webp',
+      photoStyle: { objectPosition: 'top' },
       links: {
         website: 'https://kaist-iam.github.io/group/about.html',
         email: 'hmcjeon@kaist.ac.kr',
@@ -103,7 +105,7 @@ export const people = {
     {
       id: 'jihee-kim',
       name: 'Jihee Kim',
-      role: 'Economic Progress and AI Research Group\n(econai@kaist)',
+      role: 'Economic Progress and AI Research Group',
       affiliation: 'School of Business and Technology Management, Graduate School of Data Science, School of Computing',
       photo: '/img/jiheekim_bt.jpg',
       links: {
