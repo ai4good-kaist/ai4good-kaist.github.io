@@ -12,7 +12,7 @@ export const navItems = [
 ];
 
 export const siteConfig = {
-  title: 'AI4Good@KAIST',
+  title: 'AI4Good | KAIST',
   tagline: 'Advancing AI for Social Good through Research, Collaboration, and Community',
   description:
     'A KAIST-based interdisciplinary community dedicated to leveraging artificial intelligence for positive social impact.',
