@@ -246,7 +246,7 @@
 }
 
 .btn--sm {
-  padding: var(--space-1) var(--space-3);
+  padding: var(--space-1) var(--space-2);
   font-size: var(--text-xs);
 }
 

@@ -1,4 +1,4 @@
-import { FaExternalLinkAlt, FaFilePdf } from 'react-icons/fa';
+import { FaFileAlt, FaFilePdf, FaGlobe } from 'react-icons/fa';
 import './PublicationItem.css';
 
 /**
@@ -31,7 +31,7 @@ export default function PublicationItem({ publication }) {
           <div className="pub-item__links">
             {links?.paper && (
               <a href={links.paper} target="_blank" rel="noopener noreferrer" className="btn btn--sm btn--ghost">
-                <FaExternalLinkAlt /> Paper
+                <FaFileAlt /> Paper
               </a>
             )}
             {links?.pdf && (
@@ -41,7 +41,7 @@ export default function PublicationItem({ publication }) {
             )}
             {links?.project && (
               <a href={links.project} target="_blank" rel="noopener noreferrer" className="btn btn--sm btn--ghost">
-                <FaExternalLinkAlt /> Project
+                <FaGlobe /> Project
               </a>
             )}
           </div>
