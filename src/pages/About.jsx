@@ -23,7 +23,7 @@ const participationCards = [
   {
     icon: <HiOutlineCalendar />,
     title: 'Calendar',
-    description: 'Subscribe to the AI4Good | KAIST public calendar',
+    description: 'Subscribe to the KAIST AI4Good public calendar',
     link: '',
   },
   {
@@ -62,10 +62,10 @@ export default function About() {
           <h2 className="about-block__heading">Who We Are</h2>
           <div className="about-block__body">
             <p>
-              AI4Good | KAIST is a group of researchers at KAIST with the common vision of
-              advancing AI for positive social impact. We come together for talks by AI
-              researchers from near and far, internal workshops for sharing research progress,
-              and social events small and big.
+              KAIST AI4Good is a community of researchers united by a shared vision of
+              advancing AI for positive social impact. We come together for talks by
+              AI researchers from near and far, internal workshops for sharing
+              research progress, and social events big and small.
             </p>
             <p>
               Our members conduct research, organize events, and build tools that address
@@ -82,7 +82,7 @@ export default function About() {
         <div className="container about-block">
           <h2 className="about-block__heading">Our Coordinators</h2>
           <p className="about-block__sub">
-            AI4Good | KAIST activities are organized and supported solely by volunteers.
+            KAIST AI4Good activities are organized and supported solely by volunteers.
           </p>
           <div className="about-table-wrap">
             <table className="about-table">
