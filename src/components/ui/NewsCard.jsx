@@ -17,14 +17,15 @@ export default function NewsCard({ news, featured = false }) {
         </div>
         <h3 className="news-card__title" style={{ color: '#fab005' }}>{news.title}</h3>
         {news.korean_title && <p className="news-card__subtitle">{news.korean_title}</p>}
-        <p className="news-card__desc">{news.content}</p>
-      </div>
-
-      {news.image && (
-        <div className="news-card__img-wrap">
-          <img src={news.image.startsWith('http') ? news.image : `${import.meta.env.BASE_URL}${news.image.startsWith('/') ? news.image.slice(1) : news.image}`} alt="" className="news-card__img" />
+        <div className="news-card__content">
+          <p className="news-card__desc">{news.content}</p>
+          {news.image && (
+            <div className="news-card__img-wrap">
+              <img src={news.image.startsWith('http') ? news.image : `${import.meta.env.BASE_URL}${news.image.startsWith('/') ? news.image.slice(1) : news.image}`} alt="" className="news-card__img" />
+            </div>
+          )}
         </div>
-      )}
+      </div>
     </a>
   );
 }
