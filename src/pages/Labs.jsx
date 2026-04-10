@@ -11,14 +11,14 @@ export default function Labs() {
   const [activeDept, setActiveDept] = useState('All');
 
   const departments = useMemo(() => {
-    const depts = [...new Set(labs.map((lab) => lab.department))];
+    const depts = [...new Set(labs.flatMap((lab) => lab.department.split(', ').map((d) => d.trim())))];
     depts.sort();
     return ['All', ...depts];
   }, []);
 
   const filteredLabs = activeDept === 'All'
     ? labs
-    : labs.filter((lab) => lab.department === activeDept);
+    : labs.filter((lab) => lab.department.split(', ').map((d) => d.trim()).includes(activeDept));
 
   return (
     <>
