@@ -495,10 +495,11 @@
   border-color: var(--color-accent);
 }
 
+.labs-filter__btn--active,
 .labs-filter__btn--active:hover {
   color: #fff;
-  background: var(--color-accent-hover);
-  border-color: var(--color-accent-hover);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 /* Lab profile card grid */
@@ -766,10 +767,11 @@
   border-color: var(--color-accent);
 }
 
+.pub-filter__btn--active,
 .pub-filter__btn--active:hover {
   color: #fff;
-  background: var(--color-accent-hover);
-  border-color: var(--color-accent-hover);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .pub-list {

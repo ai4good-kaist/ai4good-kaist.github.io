@@ -186,7 +186,11 @@
   transition: all var(--transition-fast);
 }
 
-.mobile-nav__link:hover,
+.mobile-nav__link:hover:not(.mobile-nav__link--active) {
+  color: var(--color-accent);
+  background: var(--color-accent-soft);
+}
+
 .mobile-nav__link--active {
   color: var(--color-accent);
   background: var(--color-accent-soft);

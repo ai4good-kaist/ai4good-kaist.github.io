@@ -10,7 +10,8 @@
   --color-accent: #fab005;         /* Yellow — point color */
   --color-accent-hover: #f08c00;   /* Darker deep yellow on hover */
   --color-accent-light: #fcc419;   /* Very light yellow for tags */
-  --color-accent-soft: #fff3bf;   /* Extremely light yellow for alternating bg */
+  --color-accent-lighter: #ffe066; /* Lighter yellow for paper tags */
+  --color-accent-soft: #fffcef;   /* Extremely light yellow for alternating bg */
 
   --color-text: #1a1a1a;           /* Main body text */
   --color-text-secondary: #555555; /* Secondary text (authors, meta) */
