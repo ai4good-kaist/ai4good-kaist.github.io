@@ -7,10 +7,10 @@
   /* --- Colors (Black / Dark theme) --- */
   --color-primary: #000000;        /* Pure black — navbar, footer */
   --color-primary-light: #1a1a1a;  /* Slightly lighter black hover */
-  --color-accent: #1d4ed8;         /* Deep Blue — point color */
-  --color-accent-hover: #1e40af;   /* Darker deep blue on hover */
-  --color-accent-light: #dbeafe;   /* Very light blue for tags */
-  --color-accent-soft: #eff6ff;    /* Extremely light blue for alternating bg */
+  --color-accent: #fab005;         /* Yellow — point color */
+  --color-accent-hover: #f08c00;   /* Darker deep yellow on hover */
+  --color-accent-light: #fcc419;   /* Very light yellow for tags */
+  --color-accent-soft: #fff3bf;   /* Extremely light yellow for alternating bg */
 
   --color-text: #1a1a1a;           /* Main body text */
   --color-text-secondary: #555555; /* Secondary text (authors, meta) */

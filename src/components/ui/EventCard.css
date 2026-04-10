@@ -24,7 +24,7 @@
 }
 
 .event-card__month {
-  background: var(--color-accent);
+  background: var(--color-accent-light);
   color: #fff;
   font-size: 0.7rem;
   font-weight: var(--font-bold);
@@ -82,7 +82,7 @@
   background: var(--color-bg-subtle);
   padding: var(--space-4);
   border-radius: var(--radius-md);
-  border-left: 3px solid var(--color-accent);
+  border-left: 3px solid var(--color-accent-light);
 }
 
 @media (max-width: 480px) {

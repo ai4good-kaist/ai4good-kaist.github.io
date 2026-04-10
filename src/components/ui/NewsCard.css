@@ -68,6 +68,13 @@
   font-size: var(--text-xl);
   font-weight: var(--font-semibold);
   color: var(--color-text);
+  margin-bottom: var(--space-1);
+  line-height: var(--leading-tight);
+}
+
+.news-card__subtitle {
+  font-size: var(--text-base);
+  color: var(--color-text-light);
   margin-bottom: var(--space-2);
   line-height: var(--leading-tight);
 }
