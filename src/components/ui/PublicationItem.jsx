@@ -30,7 +30,7 @@ export default function PublicationItem({ publication }) {
 
           <div className="pub-item__links">
             {links?.paper && (
-              <a href={links.paper} target="_blank" rel="noopener noreferrer" className="btn btn--sm btn--outline">
+              <a href={links.paper} target="_blank" rel="noopener noreferrer" className="btn btn--sm btn--ghost">
                 <FaExternalLinkAlt /> Paper
               </a>
             )}

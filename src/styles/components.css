@@ -187,12 +187,11 @@
   padding: var(--space-1) var(--space-3);
   border-radius: var(--radius-full);
   background: var(--color-accent-light);
-  color: var(--color-accent-hover);
 }
 
-.tag:hover {
-  color: var(--color-accent-hover);
-}
+/* .tag:hover { */
+/*   color: var(--color-accent-hover); */
+/* } */
 
 .tag--active {
   background: var(--color-accent);
@@ -242,6 +241,7 @@
 
 .btn--ghost:hover {
   color: var(--color-accent);
+  color: #fff;
   background: var(--color-accent-light);
 }
 
