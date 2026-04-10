@@ -5,7 +5,8 @@
 export const news = [
   {
     id: 'news-0',
-    title: 'What It Takes to Be an AI Powerhouse: Research for People',
+    title: 'What It Takes to be an AI Powerhouse: Research for People',
+    korean_title: 'AI 강국의 조건, 사람을 위한 연구',
     date: '2026-03-23',
     category: 'Media',
     content:
@@ -16,7 +17,8 @@ export const news = [
   },
   {
     id: 'news-0b',
-    title: 'The Road to Becoming a Top-3 AI Nation',
+    title: 'The Path to Becoming a Top-3 AI Nation: Beyond Technological Competition to a Globally Inclusive Society',
+    korean_title: 'AI 3대 강국으로 가는 길… 기술경쟁 넘어 글로벌 포용 사회로',
     date: '2026-03-05',
     category: 'Media',
     content:
