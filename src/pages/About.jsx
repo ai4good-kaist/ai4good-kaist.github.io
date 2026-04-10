@@ -18,19 +18,19 @@ const participationCards = [
     icon: <FaSlack />,
     title: 'Slack',
     description: 'Join our Slack workspace for discussions',
-    link: 'mailto:ai4good@kaist.ac.kr',
+    link: 'https://ai4goodkaist.slack.com',
   },
   {
     icon: <HiOutlineCalendar />,
     title: 'Calendar',
     description: 'Subscribe to the AI4Good | KAIST public calendar',
-    link: '#',
+    link: '',
   },
   {
     icon: <FaFileAlt />,
     title: 'Annual Report',
     description: 'Download to read our annual report',
-    link: '#',
+    link: '',
   },
 ];
 
@@ -116,19 +116,23 @@ export default function About() {
         <div className="container about-block">
           <h2 className="about-block__heading">How to Participate?</h2>
           <div className="participate-grid">
-            {participationCards.map((card) => (
-              <a
-                key={card.title}
-                href={card.link}
-                className="participate-card"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="participate-card__icon">{card.icon}</div>
-                <h4 className="participate-card__title">{card.title}</h4>
-                <p className="participate-card__desc">{card.description}</p>
-              </a>
-            ))}
+            {participationCards.map((card) => {
+              const Tag = card.link ? 'a' : 'div';
+              const linkProps = card.link
+                ? { href: card.link, target: '_blank', rel: 'noopener noreferrer' }
+                : {};
+              return (
+                <Tag
+                  key={card.title}
+                  className="participate-card"
+                  {...linkProps}
+                >
+                  <div className="participate-card__icon">{card.icon}</div>
+                  <h4 className="participate-card__title">{card.title}</h4>
+                  <p className="participate-card__desc">{card.description}</p>
+                </Tag>
+              );
+            })}
           </div>
         </div>
       </section>
