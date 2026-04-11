@@ -98,7 +98,7 @@ export const people = {
       affiliation: 'Graduate School of AI',
       photo: '/img/hyunwoo.jpg',
       links: {
-        website: 'https://coco-kaist.github.io/',
+        website: 'https://hyunw.kim',
         email: 'hyunwookim.ai@gmail.com',
       },
     },
@@ -109,7 +109,7 @@ export const people = {
       affiliation: 'School of Business and Technology Management, Graduate School of Data Science, School of Computing',
       photo: '/img/jiheekim_bt.jpg',
       links: {
-        website: 'http://econai.kaist.ac.kr https://jiheekim.net/',
+        website: 'https://jiheekim.net/',
         email: 'jiheekim@kaist.ac.kr',
       },
     },

@@ -82,7 +82,7 @@ export const labs = [
     topics: ['Data Science', 'Business Analytics'],
     pi: 'Jihee Kim',
     department: 'School of Business and Technology Management, Graduate School of Data Science, School of Computing',
-    link: 'http://econai.kaist.ac.kr https://jiheekim.net/',
+    link: 'http://econai.kaist.ac.kr',
     photo: '/img/jiheekim_bt.jpg',
   },
   {
