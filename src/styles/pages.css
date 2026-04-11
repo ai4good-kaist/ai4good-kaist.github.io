@@ -502,6 +502,18 @@
   border-color: var(--color-accent);
 }
 
+@media (max-width: 768px) {
+  .labs-filter {
+    gap: var(--space-1);
+    margin-bottom: var(--space-5);
+  }
+
+  .labs-filter__btn {
+    padding: 0.15rem var(--space-2);
+    font-size: var(--text-xs);
+  }
+}
+
 /* Lab profile card grid */
 .lab-grid {
   display: grid;
