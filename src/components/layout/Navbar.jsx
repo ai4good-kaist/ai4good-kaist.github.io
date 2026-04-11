@@ -15,7 +15,7 @@ export default function Navbar({ onMobileMenuOpen }) {
           <div className="navbar__brand-text">
             <span className="navbar__title">
               <span style={{ fontWeight: '800', fontSize: '1.5rem', marginRight: '0.4rem' }}>AI4GOOD</span>
-              <span style={{ fontSize: '1.2rem', fontWeight: '400' }}>| KAIST</span>
+              <span style={{ fontSize: '1.5rem', fontWeight: '400' }}>| KAIST</span>
             </span>
             <span className="navbar__subtitle">Advancing AI for Social Good</span>
           </div>
