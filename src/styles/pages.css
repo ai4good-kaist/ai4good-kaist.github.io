@@ -825,7 +825,7 @@
 .not-found__code {
   font-size: 8rem;
   font-weight: var(--font-bold);
-  color: var(--color-border);
+  color: var(--color-accent-light);
   line-height: 1;
   margin-bottom: var(--space-4);
 }
@@ -840,6 +840,7 @@
   color: var(--color-text-secondary);
   margin-bottom: var(--space-8);
 }
+
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
