@@ -73,10 +73,11 @@ export const people = {
     {
       id: 'hyun-wook-ka',
       name: 'Hyun Wook Ka',
-      role: 'Faculty',
-      affiliation: 'Graduate School of Data Science',
+      role: 'Assistive AI Lab',
+      affiliation: 'School of Transdisciplinary Studies, Graduate School of Data Science',
       photo: '/img/hyunwookka_sts.jpg',
       links: {
+        website: 'http://aailab.kaist.ac.kr',
         email: 'hyun.ka@kaist.ac.kr',
       },
     },

@@ -73,7 +73,17 @@ export const labs = [
     pi: 'Hyunwoo Kim',
     department: 'Graduate School of AI',
     link: 'https://coco-kaist.github.io/',
-    photo: '/img/hyunwoo.jpg',
+    photo: '/img/hyunwookim_gsai.jpg',
+  },
+  {
+    id: 'aai-lab',
+    name: 'Assistive AI Lab',
+    description: 'Research on assistive technology and inclusive AI',
+    topics: ['Assistive Technology', 'Inclusive AI', 'Human-Centered Innovation'],
+    pi: 'Hyunwook Ka',
+    department: 'School of Transdisciplinary Studies, Graduate School of Data Science',
+    link: 'http://aailab.kaist.ac.kr',
+    photo: '/img/hyunwookka_sts.jpg',
   },
   {
     id: 'jihee-kim-lab',
