@@ -71,7 +71,7 @@ export const publications = [
   },
   {
     id: 'pub-5',
-    title: 'HateBuffer: Safeguarding Content Moderators’ Mental Well-Being through Hate Speech Content Modification',
+    title: 'HateBuffer: Safeguarding Content Moderators\' Mental Well-Being through Hate Speech Content Modification',
     authors: ['Subin Park, Jeonghyun Kim, Jeanne Choi, Joseph Seering, Uichin Lee, Sung-Ju Lee'],
     venue: 'Proceedings of the ACM on Human-Computer Interaction: CSCW (2025)',
     year: 2025,
@@ -86,7 +86,7 @@ export const publications = [
   },
   {
     id: 'pub-6',
-    title: 'Are they lovers or friends? Evaluating LLMs' Social Reasoning in English and Korean Dialogues',
+    title: 'Are they lovers or friends? Evaluating LLMs\' Social Reasoning in English and Korean Dialogues',
     authors: ['Eunsu Kim, Junyeong Park, Juhyun Oh, Kiwoong Park, Seyoung Song, A. Seza Doğruöz, Alice Oh, Najoung Kim'],
     venue: 'The 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026)',
     year: 2026,
