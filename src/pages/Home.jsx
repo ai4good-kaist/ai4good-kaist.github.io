@@ -19,14 +19,12 @@ export default function Home() {
   const slides = [
     'workshop1.jpg',
     'workshop2.jpg',
-    'workshop3.jpg',
-    'workshop4.jpg',
   ];
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 6000);
     return () => clearInterval(timer);
   }, [slides.length]);
 
