@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 
@@ -13,21 +14,45 @@ import EventCard from '../components/ui/EventCard';
  */
 export default function Home() {
   const featuredEvents = events.filter((e) => e.type === 'upcoming').slice(0, 3);
+  
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = [
+    'workshop1.jpg',
+    'workshop2.jpg',
+    'workshop3.jpg',
+    'workshop4.jpg',
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [slides.length]);
 
   return (
     <>
       {/* Hero */}
       <section className="home-hero">
-        <video
-          className="home-hero__bg-video"
-          src={import.meta.env.BASE_URL + 'background.mp4'}
-          autoPlay
-          loop
-          muted={true}
-          defaultMuted={true}
-          playsInline
-          preload="auto"
-        />
+        {slides.map((src, index) => (
+          <img
+            key={src}
+            className="home-hero__bg-image"
+            src={import.meta.env.BASE_URL + src}
+            alt={`Workshop ${index + 1}`}
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              opacity: index === currentSlide ? 1 : 0,
+              transition: 'opacity 1s ease-in-out',
+              zIndex: 0,
+            }}
+          />
+        ))}
         <div className="home-hero__bg-overlay" />
         {/* ...기존 hero 내용이 있다면 여기에 추가... */}
       </section>

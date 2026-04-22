@@ -1,6 +1,6 @@
 import PageHero from '../components/ui/PageHero';
 import { HiOutlineMail, HiOutlineCalendar } from 'react-icons/hi';
-import { FaSlack, FaFileAlt } from 'react-icons/fa';
+import { FaSlack } from 'react-icons/fa';
 
 /**
  * About page — HCI@KAIST style.
@@ -26,24 +26,11 @@ const participationCards = [
     description: 'Subscribe to the KAIST AI4Good public calendar',
     link: '',
   },
-  {
-    icon: <FaFileAlt />,
-    title: 'Annual Report',
-    description: 'Download to read our annual report',
-    link: '',
-  },
 ];
 
 const coordinators = [
   {
     year: '2026',
-    lead: 'TBD',
-    seminar: '',
-    workshop: '',
-    social: '',
-  },
-  {
-    year: '2025',
     lead: 'TBD',
     seminar: '',
     workshop: '',

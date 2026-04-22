@@ -17,6 +17,7 @@ export const events = [
 • AI for education (Soyeon Ahn, Juho Kim)
 • AI for mental health (Dooyoung Jung, Hwajung Hong)
 • Closing`,
+    image: '/img/kickoff-poster.jpg',
     type: 'upcoming',
     featured: true,
     link: null,
