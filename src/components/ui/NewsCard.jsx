@@ -15,7 +15,7 @@ export default function NewsCard({ news, featured = false }) {
           {news.category && !news.source && <span className="tag tag--active">{news.category}</span>}
           <span className="news-card__date">{news.date}</span>
         </div>
-        <h3 className="news-card__title" style={{ color: '#fab005' }}>{news.title}</h3>
+        <h3 className="news-card__title">{news.title}</h3>
         {news.korean_title && <p className="news-card__subtitle">{news.korean_title}</p>}
         <div className="news-card__content">
           <p className="news-card__desc">{news.content}</p>
