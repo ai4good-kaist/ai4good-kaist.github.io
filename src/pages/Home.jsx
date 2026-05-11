@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 
@@ -16,17 +16,38 @@ export default function Home() {
   const featuredEvents = events.filter((e) => e.type === 'upcoming').slice(0, 3);
   
   const [currentSlide, setCurrentSlide] = useState(0);
+  const timerRef = useRef(null);
   const slides = [
     'workshop1.jpg',
     'workshop2.jpg',
   ];
 
-  useEffect(() => {
-    const timer = setInterval(() => {
+  const resetTimer = useCallback(() => {
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 6000);
-    return () => clearInterval(timer);
   }, [slides.length]);
+
+  useEffect(() => {
+    resetTimer();
+    return () => { if (timerRef.current) clearInterval(timerRef.current); };
+  }, [resetTimer]);
+
+  const goToSlide = (index) => {
+    setCurrentSlide(index);
+    resetTimer();
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    resetTimer();
+  };
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    resetTimer();
+  };
 
   return (
     <>
@@ -52,7 +73,34 @@ export default function Home() {
           />
         ))}
         <div className="home-hero__bg-overlay" />
-        {/* ...기존 hero 내용이 있다면 여기에 추가... */}
+
+        {/* Slide Navigation Arrows */}
+        <button
+          className="home-hero__nav home-hero__nav--prev"
+          onClick={prevSlide}
+          aria-label="Previous slide"
+        >
+          ‹
+        </button>
+        <button
+          className="home-hero__nav home-hero__nav--next"
+          onClick={nextSlide}
+          aria-label="Next slide"
+        >
+          ›
+        </button>
+
+        {/* Dot Indicators */}
+        <div className="home-hero__dots">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              className={`home-hero__dot${index === currentSlide ? ' home-hero__dot--active' : ''}`}
+              onClick={() => goToSlide(index)}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
       </section>
 
       {/* News */}

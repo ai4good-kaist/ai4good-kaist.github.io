@@ -8,6 +8,89 @@
   z-index: 1;
   pointer-events: none;
 }
+
+/* Hero Slide Navigation Arrows */
+.home-hero__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+  backdrop-filter: blur(4px);
+}
+
+.home-hero__nav:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.home-hero__nav--prev {
+  left: var(--space-4);
+}
+
+.home-hero__nav--next {
+  right: var(--space-4);
+}
+
+/* Hero Dot Indicators */
+.home-hero__dots {
+  position: absolute;
+  bottom: var(--space-6);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  gap: var(--space-2);
+}
+
+.home-hero__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-full);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: all var(--transition-fast);
+}
+
+.home-hero__dot:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.home-hero__dot--active {
+  background: #fff;
+  border-color: #fff;
+  transform: scale(1.2);
+}
+
+@media (max-width: 640px) {
+  .home-hero__nav {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+  }
+
+  .home-hero__nav--prev {
+    left: var(--space-2);
+  }
+
+  .home-hero__nav--next {
+    right: var(--space-2);
+  }
+}
 /* ===========================
    Page-Specific Styles
    HCI@KAIST-inspired
@@ -38,7 +121,7 @@
   pointer-events: none;
 }
 
-.home-hero > *:not(.home-hero__bg-video) {
+.home-hero > *:not(.home-hero__bg-video):not(.home-hero__nav):not(.home-hero__dots) {
   position: relative;
   z-index: 1;
 }
